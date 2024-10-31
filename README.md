@@ -71,9 +71,15 @@ and the fast fill method to fill down which resulted to the totals for;
  
 ## Pivot Tables in Excel
 
-- Created a pivot table to analyze sales by region, products and month, providing insights into geographical performance.
+- Created a pivot table to analyze sales by region, products and month, providing insights into performance.
   
   **Visuals:**
+  - This table shows the Total sales generated from each product where **Shoes** has the highest sales.
+  
+    ![](SalesbyProduct.png)
+
+
+
 
 
 
