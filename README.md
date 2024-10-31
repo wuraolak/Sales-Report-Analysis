@@ -69,7 +69,7 @@ and the fast fill method to fill down which resulted to the totals for;
 
 -------
  
-## Pivot Tables in Excel
+### Pivot Tables in Excel
 
 - Created a pivot table to analyze sales by region, products and month, providing insights into performance from year **2023** and year **2024** respectfully.
   
@@ -217,7 +217,21 @@ The goal of this report is to show the sales performance based on their sales fi
                         LQ.Product IS NULL;
 ```
 
- 
+-----
+
+## Data Visualization with Power BI
+
+This report provides insights into sales trends, products performance and behavior using interactive visuals.
+
+**Key features**
+- This Reports creates interactive dashboards to visualize sales performance metrics.
+
+- Charts, Graphs, Tables and Slicers are used. Included bar charts to showcase region and  product trends, donut charts for average sales by product category and slicers to show sales performance for each year.
+
+### Power BI Dashboard
+**
+
+
 
 
 
