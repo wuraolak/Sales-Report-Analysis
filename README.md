@@ -86,6 +86,142 @@ and the fast fill method to fill down which resulted to the totals for;
 
 ------
 
+## SQL Sales Performance Report
+The goal of this report is to show the sales performance based on their sales figures. The report will include:
+
+- Highest selling product by sales value.
+- Identify product with no sales in the last quarter usint the **left join**.
+- Total sales for each product.
+- Number of sales transaction in each region.
+- Total revenue per product.
+- Percentage of total sales contributed by each region using the **case when** and **join** 
+  function.
+- Monthly sales total for the current year.
+
+**Data Base Structure**: Records individual sales transactions.
+
+Orderid: INT
+Customer_id: INT 
+Product: Varchar(50) 
+Region: Varchar(50)
+OrderDate: DATETIME
+Quantity: INT
+UnitPrice: Decimal
+Revenue: Numeric
+
+## SQL Queries
+
+ **1. This query retrieves total sales for each product.**
+
+ ```sql
+                         SELECT Product,
+                         SUM(Total_Revenue) AS TotalSales
+                         FROM SalesData
+                         GROUP BY Region
+                         ORDER BY Region
+```
+
+
+
+**2. Retrieving number of sales transaction in each region.**
+
+ ```sql
+                         SELECT Region, COUNT(*) AS NumberofSales
+                         FROM SalesData 
+                         GROUP BY Region
+                         ORDER BY Region
+```
+
+**3. This query retrieves the highest selling products by total sales value.**
+
+```sql
+
+                        SELECT TOP (1) Product,
+                        SUM(Quantity * UnitPrice) AS TotalSales
+                        FROM SalesData
+                        GROUP BY Product
+                        ORDER BY TotalSales DESC;
+```
+
+**4. Retrieving total revenue per product.**
+
+```sql
+                        SELECT Product,
+                        SUM(Quantity * UnitPrice) AS TotalRevenue
+                        FROM SalesData
+                        GROUP BY Product
+                        ORDER BY Product
+```
+
+**5. This query retrieved the percentage of total sales contributed by each region.**
+
+```sql
+
+                         WITH TotalSales AS (
+                         SELECT SUM(Quantity * UnitPrice) AS TotalSales
+                        FROM [dbo].[SalesData]
+                        ),
+                         RegionSales AS (
+                        SELECT 
+                         Region,
+                        SUM(Quantity * UnitPrice) AS RegionTotalSales
+                        FROM [dbo].[SalesData]
+                        GROUP BY Region
+                        )
+                        SELECT 
+                         R.Region,
+                        CASE
+                        WHEN T.TotalSales = 0 THEN 0
+                        ELSE (CAST(R.RegionTotalSales AS DECIMAL) / CAST(T.TotalSales AS FLOAT) * 100) 
+                           END AS PercentageOfTotalSales
+                        FROM
+                        RegionSales R
+                        CROSS JOIN
+                        TotalSales T
+                        ORDER BY R.RegionTotalSales DESC;
+```
+
+**6. This query retrieves the monthly sales for the current year.**
+
+```sql
+
+                        SELECT
+                         MONTH(OrderDate) AS SalesMonth,
+                        SUM(Quantity * UnitPrice) AS MonthlySalesTotal
+                        FROM [dbo].[SalesData]
+                        WHERE
+                         YEAR(2024) = YEAR(2024)
+                        GROUP BY (ORDERDATE)
+                        ORDER BY
+                        MONTH(OrderDate)
+```
+
+**7. This query identifies product with no sales in the last quarter.**
+
+```sql
+
+                         WITH LastQuarter AS (
+                          SELECT
+                          DISTINCT Product
+                         FROM [dbo].[SalesData]
+                          WHERE 
+                         OrderDate >= DATEADD(QUARTER, -1, GETDATE())
+                         )
+                        SELECT P.Product
+                         FROM
+                        (SELECT DISTINCT Product 
+                        FROM [dbo].[SalesData]) p
+                        LEFT JOIN
+                        LastQuarter LQ ON P.Product = LQ.Product
+                         WHERE 
+                        LQ.Product IS NULL;
+```
+
+ 
+
+
+
+
 
 
 
