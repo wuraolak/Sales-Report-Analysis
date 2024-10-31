@@ -256,7 +256,7 @@ This report analyzes total sales trends during the fiscal year 2023. The report 
 
 **4. 2024 Dashboard to show the sales trend**
 
-The analysis reveals that 2024 has seen a decline in sales revenue compared to 2023, highlighting the need for strategic assessment and corrective measures. The **shoe** category continues to be a significant contributor to overall revenue, offering a promising avenue for future marketing and product development strategies. Comparisons reveal specific periods in 2024 where sales declined compared to the figures in 2023. 2024 has a total revenue of **996,000**.  A noticeable decline in total sales for 2014, indicating potential factors affecting sales performance.
+The analysis reveals that 2024 has seen a decline in sales revenue compared to 2023, highlighting the need for strategic assessment and corrective measures. The **shoe** category continues to be a significant contributor to overall revenue, offering a promising avenue for future marketing and product development strategies. Comparisons reveal specific periods in 2024 where sales declined compared to the figures in 2023. 2024 has a total revenue of **996,000**.  A noticeable decline in total sales for 2024, indicating potential factors affecting sales performance.
 
 ![](2024BIAnalysis.png)
 
