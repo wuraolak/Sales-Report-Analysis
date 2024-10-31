@@ -90,24 +90,24 @@ and the fast fill method to fill down which resulted to the totals for;
 The goal of this report is to show the sales performance based on their sales figures. The report will include:
 
 - Highest selling product by sales value.
-- Identify product with no sales in the last quarter usint the **left join**.
+- Identify product with no sales in the last quarter usint the **left join function**.
 - Total sales for each product.
 - Number of sales transaction in each region.
 - Total revenue per product.
-- Percentage of total sales contributed by each region using the **case when** and **join** 
+- Percentage of total sales contributed by each region using the **case when statement** and **join function** 
   function.
 - Monthly sales total for the current year.
 
-**Data Base Structure**: Records individual sales transactions.
+**Data type structure**: Records individual sales transactions.
 
-Orderid: INT
-Customer_id: INT 
-Product: Varchar(50) 
-Region: Varchar(50)
-OrderDate: DATETIME
-Quantity: INT
-UnitPrice: Decimal
-Revenue: Numeric
+- Orderid: INT
+- Customer_id: INT 
+- Product: Varchar(50) 
+- Region: Varchar(50)
+- OrderDate: DATETIME
+- Quantity: INT
+- UnitPrice: Decimal
+- Revenue: Numeric
 
 ## SQL Queries
 
