@@ -181,6 +181,7 @@ The goal of this report is to show the sales performance based on their sales fi
                         ORDER BY R.RegionTotalSales DESC;
 ```
 
+
 **6. This query retrieves the monthly sales for the current year.**
 
 ```sql
