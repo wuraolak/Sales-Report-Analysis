@@ -255,11 +255,41 @@ This report analyzes total sales trends during the fiscal year 2023. The report 
 
 **4. 2024 Dashboard to show the sales trend**
 
-The analysis reveals that 2024 has seen a decline in sales revenue compared to 2023, highlighting the need for strategic assessment and corrective measures. The **shoe** category continues to be a significant contributor to overall revenue, offering a promising avenue for future marketing and product development strategies. Comparisons reveal specific periods in 2024 where sales declined compared to the figures in 2023. 2024 has a total revenue of **996,000**
+The analysis reveals that 2024 has seen a decline in sales revenue compared to 2023, highlighting the need for strategic assessment and corrective measures. The **shoe** category continues to be a significant contributor to overall revenue, offering a promising avenue for future marketing and product development strategies. Comparisons reveal specific periods in 2024 where sales declined compared to the figures in 2023. 2024 has a total revenue of **996,000**.  A noticeable decline in total sales for 2014, indicating potential factors affecting sales performance.
 
-![](.png)
+![](2024BIAnalysis.png)
 
 ---
+
+## Key Insights
+
+- The Overall Power BI dashboard revealed the top selling product by total sales(Revenue) was **Shoes** but has a low average sales, indicating potential challenges in pricing strategy, profitability, and opportunities for marketing strategy aimed at increasing the transaction value.
+- The total revenue generated in 2023 was significantly higher than in 2024.
+- A noticeable decline in total sales for 2024, indicating potential factors affecting sales performance.
+- Identifies specific months where revenue declined in 2024 compared to the corresponding months in 2023.
+- Observes peak months in 2023 that helped boost total revenue, while noting slower months in 2024.
+
+  ## Conclusion
+
+- Overall, while sales figures are strong, particularly in the shoe category, there is an evident opportunity to enhance profitability through strategic adjustments in pricing and marketing. Further analysis may identify customer preferences and improve the sales performance of other product categories.
+- The findings show that 2023 was a strong year for sales, significantly outpacing 2024 in total revenue. Additionally, shirts have emerged as the top revenue-generating product, suggesting an opportunity for the company to focus marketing efforts on this category. 
+- The analysis reveals that 2024 has seen a decline in sales revenue compared to 2023, highlighting the need for strategic assessment and corrective measures. The shoe category continues to be a significant contributor to overall revenue, offering a promising avenue for future marketing and product development strategies.
+
+
+  ## Recommendation
+
+- Identify Factors Behind 2024 Decline and Conduct a deeper analysis into the factors that contributed to the drop in sales 
+ and develop strategies to address them for future years.
+- Investigate Revenue Decline by Conducting a detailed analysis of the reasons behind the decline in sales revenue from 2023 to 2024. This could involve market research or customer feedback to better understand consumer needs.
+- Leverage Shirt Sales. Build on the success of shirt sales by expanding product, enhancing marketing strategies, 
+ and exploring new sales channels.
+- Enhanced Marketing Strategies by Exploring innovative marketing strategies to recapture lost sales, especially in the 
+  months that showed significant revenue declines.
+  
+
+# THANK YOU
+
+
 
 
 
