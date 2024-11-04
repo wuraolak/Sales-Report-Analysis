@@ -172,7 +172,8 @@ The goal of this report is to show the sales performance based on their sales fi
                          R.Region,
                         CASE
                         WHEN T.TotalSales = 0 THEN 0
-                        ELSE (CAST(R.RegionTotalSales AS DECIMAL) / CAST(T.TotalSales AS FLOAT) * 100) 
+                        ELSE (CAST(R.RegionTotalSales AS DECIMAL) /
+                        CAST(T.TotalSales AS FLOAT) * 100) 
                            END AS PercentageOfTotalSales
                         FROM
                         RegionSales R
